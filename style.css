@@ -1,14 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Cairo:wght@200..1000&family=Emblema+One&family=Fustat:wght@200..800&family=Lalezar&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
-:root{
-    --primary-color: #6e4729; 
-    --primary-color-dark: #2f1e13;
-    --secondary-color: #d3b895; 
-    --text-dark: #3E2723;
-    --text-light: #FAF3E0; 
-    --extra-light: #FFF7E6;
+:root {
+    --primary-color: #A67B5B; 
+    --primary-color-dark: #6D4C41; 
+    --secondary-color: #E6C9A8; 
+    --text-dark: #5D4037; 
+    --text-light: #FAE5D3; 
+    --extra-light: #FFF9F0; 
+    --accent-color: #C19A6B; 
     --white: #FFFFFF; 
-    --max-width: 1200px; 
+    --max-width: 1200px;
     --header-font: 'Cairo', sans-serif;
 }
 
@@ -252,6 +253,7 @@ nav{
     gap: 2rem;
     background-color: var(--primary-color-dark);
     transform: translateY(10rem);
+    border-radius: 10px; 
 }
 
 .book_container h4{
@@ -280,21 +282,30 @@ nav{
 .book_container input{
     padding: .75rem 1rem;
     font-size: 1rem;
-    color: var(--white);
-    background-color: var(--text-dark);
+    color: var(--text-dark);
+    background-color: var(--extra-light);
     border: none;
     outline: none;
+    border-radius: 5px; 
 }
 
-.book_container input:hover{
-    background-color: var(--primary-color);
+.book_container input:hover {
+    background-color: var(--secondary-color);
     transition: 0.3s;
-
 }
 
 .book_container .btn{
     width: fit-content;
     margin-right: auto;
+    background-color: var(--primary-color); 
+    color: var(--white);
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+.book_container .btn:hover {
+    background-color: var(--primary-color-dark); 
 }
 
 .menu_card_content h3{
